@@ -1,0 +1,212 @@
+/* MAIN CONTENT */
+body {
+    overflow-x: hidden;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.main-center {
+    display: flex;
+    justify-content: center;
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+.item-container:hover {
+    background-color: #778da7b7;
+    cursor: pointer;
+    transform: scale(1.1);
+    color: white;
+}
+
+.item-container:active {
+    transform: scale(0.99);
+}
+
+.icon {
+    width: 60px;
+}
+
+.icon-container {
+    width: 150px;
+    height: 150px;
+}
+
+.home-icon {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.home-icon,
+.home-icon rect,
+.home-icon text {
+    transition: all 0.2s ease-in-out;
+}
+
+.home-icon:hover {
+    transform: scale(1.1);
+}
+  
+.home-icon:hover rect {
+    fill: #778da7b7;
+}
+
+.home-icon:hover text {
+    fill: white;
+}
+
+.home-icon:active {
+    transform: scale(0.99);
+}
+
+#members-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+}
+
+.member-container {
+    margin-inline: 70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 50%;
+}
+
+.members-icon {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    fill: none;
+}
+
+.members-icon,
+.members-icon rect,
+.members-icon text {
+    transition: all 0.2s ease-in-out;
+}
+
+.members-icon:hover {
+    transform: scale(1.1);
+}
+
+.members-icon:hover rect {
+    fill: #778da7b7;
+}
+
+.members-icon:hover text {
+    fill: white;
+}
+
+.members-icon:active {
+    transform: scale(0.99);
+}
+
+.task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid rgb(188, 188, 188);
+    margin-bottom: 10px;
+    transition: all 0.2s;
+}
+
+#nisidini-tasks {
+    display: none;
+}
+
+#namrutha-tasks {
+    display: none;
+}
+
+#rukaiya-tasks {
+    display: none;
+}
+
+#sevinda-tasks {
+    display: none;
+}
+
+.task-container:hover {
+    background-color: #778da7b7;
+    color: white;
+}
+
+.each-task {
+    width: 200px;
+    height: 50px;
+    fill: none;
+    margin-bottom: 10px;
+}
+
+.each-task:hover rect {
+    fill: #778da7b7;
+}
+
+.each-task:hover text {
+    fill: white;
+}
+
+.editor-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .editor-btn {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: white;
+    background-color: #1B263B;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .editor-btn:hover {
+    background-color: #263552;
+  }
+
+@media screen and (min-width: 550px) {
+    .member-container {
+        margin-inline: 40px;
+    }
+}
+
+@media screen and (min-width: 685px) {
+    .member-container {
+        margin-inline: 75px;
+    }
+}

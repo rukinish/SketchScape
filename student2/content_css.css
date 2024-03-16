@@ -1,0 +1,361 @@
+body {
+  background-color: white;
+  /* height: 250vh; */
+}
+
+/*Links to the page*/
+.sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.links-container {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  align-items: center;
+  background-color: #263552;
+}
+
+.links {
+  margin-right: 40px;
+}
+
+.links a{
+  color: white;
+}
+
+.links:hover {
+  border-bottom: 1px solid white;
+}
+
+
+/*2D CONTENT*/
+.main-center {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  text-align: justify;
+}
+
+.intro-container,
+.history-container,
+.techniques-container,
+.popular-films-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin-bottom: 60px;
+}
+
+.heading {
+  font-size: 4rem;
+  font-style: italic;
+  justify-content: center;
+}
+
+.main-picture {
+  width: 400px;
+  
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+  top:100px;
+  font-size: large;
+}
+
+.ani-2D-tag {
+display: none;
+}
+
+@media screen and (min-width: 768px) {
+.main-picture {
+    width: 530px;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.main-picture {
+  width: 650px;
+}
+}
+
+@media screen and (min-width: 1250px) {
+.heading {
+  font-size: 5rem;
+}
+.heading-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.hero-container {
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.main-picture {
+    width: 590px;
+    height: 435px;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+.hero-container > p {
+    margin-top: 0;
+}
+
+.ani2D-tag-container {
+  position: absolute;
+  left: 1;
+  top: 800px;
+}
+
+.ani-2D-tag {
+  display: block;
+  font-size: 200px;
+  opacity: 0.2;
+  margin: 0;
+  font-weight: bold;
+}
+}
+
+/* HISTORY */
+
+.history-container {
+  background-color: #415A77;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.history-heading {
+margin-top: 60px;
+font-size:3rem;
+color:white;
+}
+
+.history-image-container,
+.techniques-image-container, 
+.popular-image-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.image1 {
+  margin: 45px;
+  margin-bottom: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.about-history {
+  width: 75%;
+  margin-bottom: 120px;
+  font-size: x-large;
+  color:white;
+}
+
+.para-color {
+  color: white;
+}
+
+.history-tag {
+display: none;
+}
+
+.history-tag-disappear {
+display: none;
+}
+
+.caption-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1250px) {
+.history-tag-container {
+  display: flex;
+  align-items: center;
+  margin-left: -650px;
+  margin-bottom:-70px;
+  
+}
+
+.history-tag {
+  color: #1B263B;
+  display: block;
+  font-size: 200px;
+  opacity: 0.5;
+  margin: 0;
+  font-weight: bold;
+  margin-inline:700px;
+}
+
+.history-heading {
+  font-size: 5rem;
+  margin-left: -650px;
+  color:white;
+}
+}
+
+/* TECHNIQUES */
+
+.techniques-container {
+background-color:white;
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+.about-techniques,
+.about-popular {
+width: 85%;
+margin-block: 60px;
+font-size:large;
+}
+
+.techniques-image {
+  margin: 25px;
+  margin-left: -100px;
+  width:300px;
+  height:200px;
+  background-color:#1B263B;
+}
+
+.techniques-tag {
+display: none;
+}
+
+@media screen and (min-width: 1100px) {
+.techniques-image {
+  margin-top: 50px;
+  margin: 35px;
+  width: 350px;
+}
+}
+
+@media screen and (min-width: 1250px) {
+.techniques-image {
+  width:400px;
+  
+}
+
+.techniques-tag-container {
+  display: flex;
+  align-items: center;
+  margin-top:100px;
+}
+
+.techniques-tag {
+  display: block;
+  font-size: 200px;
+  opacity: 0.5;
+  margin: 0;
+  font-weight: bold;
+  margin-top:50px;
+  margin-bottom:-65px;
+  margin-right: -600px;
+}
+
+.techniques-heading {
+  font-size:5rem;
+  margin-top:20px;
+  margin-right: -200px;
+  margin-left: -650px;
+}
+}
+
+/* POPULAR FILMS */
+
+.popular-films-container {
+background-color: #415A77;
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+.popular-tag {
+display: none;
+}
+
+.popular-image {
+width: 190px;
+height: 281px;
+background-color: white;
+margin: 45px;
+display: inline-block;
+}
+
+@media screen and (min-width: 1115px) {
+.popular-image-container {
+  width: 1000px;
+}
+}
+
+@media screen and (min-width: 1250px) {
+.popular-image1 {
+  transform: scale(1.2);
+}
+
+.popular-tag-container {
+  display: flex;
+  align-items: center;
+}
+
+.popular-tag {
+  display: block;
+  font-size: 200px;
+  opacity: 0.5;
+  margin: 0;
+  font-weight: bold;
+  margin-left: -600px;
+  margin-bottom: -100px;
+}
+
+.popular-heading {
+  font-size:5rem;
+  margin-top:70px;
+  margin-right: -200px;
+  margin-left: -650px;
+  color:white;
+ /* margin-left: 500px;
+  margin-right: 850px;*/
+}
+
+}
+.editor-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.editor-btn {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: white;
+  background-color: #1B263B;
+  border: none;
+  cursor: pointer;
+}
+
+.editor-btn:hover {
+  background-color: #263552;
+}
+
+

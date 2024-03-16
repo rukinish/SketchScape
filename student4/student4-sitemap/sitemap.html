@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitemap svg</title>
+    <link rel="stylesheet" href="sitemap.css" />
+    <link rel="stylesheet" href="/externalStyleSheet/externalStyleSheet.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="collapsible collapsible-container collapsible--expanded">
+          <img src="/svg/SketchScapeLogo.svg" alt="logo" class="nav-logo" />
+
+          <img
+            src="/svg/bars2.svg"
+            alt="collapsible-icon"
+            class="collapsible-icon"
+          />
+
+          <ul class="list collapsible-content">
+            <li class="anchors">
+              <a class="anchors-el" href="/student2/main.html">Home</a>
+            </li>
+            <li class="anchors">
+              <a class="anchors-el" href="/student1/SHOP.html">Buy Products</a>
+            </li>
+            <li class="anchors">
+              <a class="anchors-el" href="/student3/quiz.html">Quiz</a>
+            </li>
+            <li class="anchors">
+              <a class="anchors-el" href="/student3/student-details.html">Student Details</a>
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student4/student4-sitemap/sitemap.html"
+                >Sitemap</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student4/student4-gallery/gallery.html"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <div class="main-center">
+        <div class="containers">
+          <div onclick="showMembers()">
+            <svg class="home-icon">
+              <rect
+                rx="30"
+                ry="30"
+                x="0.5"
+                y="0.5"
+                height="149"
+                width="149"
+                fill="white"
+                stroke="#BCBCBC"
+                stroke-width="1px"
+              ></rect>
+              <image
+                href="/svg/home.svg"
+                width="60"
+                height="60"
+                x="44.5"
+                y="25"
+              ></image>
+              <text
+                x="50%"
+                y="115"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                font-size="1.7rem"
+              >
+                HOME PAGE
+              </text>
+            </svg>
+          </div>
+          <!-- dominant-baseline is to center it vertically and text-anchor is to center it horizontally -->
+
+          <div id="members-containers">
+            <div class="items-container">
+              <div
+                class="member-container"
+                onclick="showTasks('nisidini-tasks')"
+              >
+                <svg class="members-icon">
+                  <rect
+                    rx="100%"
+                    ry="100%"
+                    x="0.5"
+                    y="0.5"
+                    height="149"
+                    width="149"
+                    fill="white"
+                    stroke="#BCBCBC"
+                    stroke-width="1px"
+                  />
+
+                  <image
+                    href="/svg/girl1.svg"
+                    width="60"
+                    height="60"
+                    x="44.5"
+                    y="25"
+                  ></image>
+
+                  <text
+                    x="50%"
+                    y="110"
+                    fill="black"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                    font-size="1.7rem"
+                  >
+                    NISIDINI
+                  </text>
+                </svg>
+              </div>
+
+              <div id="nisidini-tasks">
+                <svg class="each-task">
+                  <a href="../../student1/SplashScreen.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      1. Splash Screen
+                    </text>
+                  </a>
+                </svg>
+
+                <br />
+                <svg class="each-task">
+                  <a href="../../student1/SHOP.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      2. Buy Products
+                    </text>
+                  </a>
+                </svg>
+
+                <br />
+
+                <svg class="each-task">
+                  <a href="../../student1/induvidualPage.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      3. Individual Page
+                    </text>
+                  </a>
+                </svg>
+              </div>
+            </div>
+
+            <div class="items-container">
+              <div
+                class="member-container"
+                onclick="showTasks('namrutha-tasks')"
+              >
+                <svg class="members-icon">
+                  <rect
+                    rx="100%"
+                    ry="100%"
+                    x="0.5"
+                    y="0.5"
+                    height="149"
+                    width="149"
+                    fill="white"
+                    stroke="#BCBCBC"
+                    stroke-width="1px"
+                  />
+
+                  <image
+                    href="/svg/girl2.svg"
+                    width="60"
+                    height="60"
+                    x="44.5"
+                    y="25"
+                  ></image>
+
+                  <text
+                    x="50%"
+                    y="110"
+                    fill="black"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                    font-size="1.7rem"
+                  >
+                    NAMRUTHA
+                  </text>
+                </svg>
+              </div>
+
+              <div id="namrutha-tasks">
+                <svg class="each-task">
+                  <a href="/student2/main.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      1. Main Page
+                    </text>
+                  </a>
+                </svg>
+
+                <br />
+                <svg class="each-task">
+                  <a href="/student2/Comments_Form.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      2. Comments
+                    </text>
+                  </a>
+                </svg>
+
+                <br />
+
+                <svg class="each-task">
+                  <a href="/student2/contentpage.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      3. Individual Page
+                    </text>
+                  </a>
+                </svg>
+              </div>
+            </div>
+
+            <div class="items-container">
+              <div
+                class="member-container"
+                onclick="showTasks('rukaiya-tasks')"
+              >
+                <svg class="members-icon">
+                  <rect
+                    rx="100%"
+                    ry="100%"
+                    x="0.5"
+                    y="0.5"
+                    height="149"
+                    width="149"
+                    fill="white"
+                    stroke="#BCBCBC"
+                    stroke-width="1px"
+                  />
+
+                  <image
+                    href="/svg/girl3.svg"
+                    width="60"
+                    height="60"
+                    x="44.5"
+                    y="25"
+                  ></image>
+
+                  <text
+                    x="50%"
+                    y="110"
+                    fill="black"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                    font-size="1.7rem"
+                  >
+                    RUKAIYA
+                  </text>
+                </svg>
+              </div>
+
+              <div id="rukaiya-tasks">
+                <svg class="each-task">
+                  <a href="/student3/quiz.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      1. Quiz
+                    </text>
+                  </a>
+                </svg>
+
+                <br />
+                <svg class="each-task">
+                  <a href="/student3/student-details.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      2. Student Details
+                    </text>
+                  </a>
+                </svg>
+
+                <br />
+
+                <svg class="each-task">
+                  <a href="/student3/ST3induvidualPage.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      3. Individual Page
+                    </text>
+                  </a>
+                </svg>
+              </div>
+            </div>
+
+            <div class="items-container">
+              <div
+                class="member-container"
+                onclick="showTasks('sevinda-tasks')"
+              >
+                <svg class="members-icon">
+                  <rect
+                    rx="100%"
+                    ry="100%"
+                    x="0.5"
+                    y="0.5"
+                    height="149"
+                    width="149"
+                    fill="white"
+                    stroke="#BCBCBC"
+                    stroke-width="1px"
+                  />
+
+                  <image
+                    href="/svg/boy.svg"
+                    width="60"
+                    height="60"
+                    x="44.5"
+                    y="25"
+                  ></image>
+
+                  <text
+                    x="50%"
+                    y="110"
+                    fill="black"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                    font-size="1.7rem"
+                  >
+                    SEVINDA
+                  </text>
+                </svg>
+              </div>
+
+              <div id="sevinda-tasks">
+                <svg class="each-task">
+                  <a href="/student4/student4-sitemap/sitemap.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      1. Sitemap
+                    </text>
+                  </a>
+                </svg>
+
+                <br />
+                <svg class="each-task">
+                  <a href="/student4/student4-gallery/gallery.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      2. Gallery
+                    </text>
+                  </a>
+                </svg>
+                <br />
+                <svg class="each-task">
+                  <a href="/student4/student4-induvidual/anime.html">
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="199"
+                      height="49"
+                      rx="24.5"
+                      stroke="#BCBCBC"
+                    />
+                    <text
+                      x="50%"
+                      y="50%"
+                      fill="black"
+                      dominant-baseline="middle"
+                      text-anchor="middle"
+                      font-size="1.7rem"
+                    >
+                      3. Individual Page
+                    </text>
+                  </a>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="editor-btn-container">
+        <a
+          href="/student4/student4-pageEditor/pageEditor.html"
+          class="editor-btn"
+          >Editor</a
+        >
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-logo-container">
+        <img src="/svg/SketchScapeLogo.svg" alt="logo" class="nav-logo" />
+        <div>
+          <p class="logo-name">SketchScape</p>
+          <p class="slogan">
+            Experience the Thrill of entertainment. Where the fun never stops!!!
+          </p>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <p>Copyright &#169;</p>
+
+        <div class="terms-conditions">
+          <p>Terms</p>
+          <p>Privacy</p>
+          <p>Cookies</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/navigationBar/navbar.js"></script>
+    <script src="sitemap.js"></script>
+  </body>
+</html>

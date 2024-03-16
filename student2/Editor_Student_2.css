@@ -1,0 +1,138 @@
+* {
+    transition: all 0.2s;
+}
+
+body {
+    background-color: white;
+}
+
+/* Main Content */
+
+.profile-container,
+.pages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.item-container {
+    width: 425px;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-inline: 37px;
+}
+
+.pages-container > .item-container {
+    text-align: left;
+}
+
+.name {
+    font-size: 5rem;
+}
+
+.student-number {
+    font-size: 2rem;
+}
+
+.student-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dashed-line {
+    border: 1px dashed rgb(212, 212, 212);
+}
+
+.image-preview-container {
+    margin-block: 50px;
+    width: 400px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.image-preview-container:hover {
+    transform: scale(1.05);
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.button{
+    text-decoration: none;
+    font-size: 2.4rem;
+    color:black;
+}
+
+.arrow-btn-container {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: end;
+}
+
+.link-to-home {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid;
+    background-color: #415A77;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.link-to-home:hover {
+    background-color: #4e6c8e;
+}
+
+@media screen and (min-width: 768px) {
+    .name {
+        font-size: 6rem;
+    }
+
+    .student-number {
+        font-size: 2.4rem;
+    }
+
+    .student-picture {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 998px) {
+    .name {
+        text-align: left;
+    }
+    
+    .student-item-container {
+        text-align: left;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .student-picture {
+        width: 400px;
+        height: 400px;
+    }
+
+    .item-container {
+        margin-inline: 75px;
+    }    
+}

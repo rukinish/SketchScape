@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="external.css" />
+    <link rel="stylesheet" href="SHOP.css" />
+    <!--Link to the Shop CSS page-->
+  </head>
+  <body>
+    <!--Navigation bar-->
+
+    <header>
+      <nav>
+        <div class="collapsible collapsible-container collapsible--expanded">
+          <img src="/svg/SketchScapeLogo.svg" alt="logo" class="nav-logo" />
+
+          <img
+            src="/svg/bars2.svg"
+            alt="collapsible-icon"
+            class="collapsible-icon"
+          />
+
+          <ul class="list collapsible-content">
+            <li class="anchors">
+              <a class="anchors-el" href="/student2/main.html">Home</a>
+            </li>
+            <li class="anchors">
+              <a class="anchors-el" href="/student1/SHOP.html">Buy Products</a>
+            </li>
+            <li class="anchors">
+              <a class="anchors-el" href="/student3/quiz.html"
+                >Quiz</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student3/student-details.html"
+                >Student Details</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="../student4/student4-sitemap/sitemap.html"
+                >Sitemap</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="../student4/student4-gallery/gallery.html"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <hr />
+
+    <!-- Go to top button -->
+    <div>
+      <a class="topbtn" href="#"> <i class="bx bx-chevrons-up"></i> </a>
+    </div>
+
+    <!--Image Slider-->
+    <br /><br />
+    <div class="slideshow-container">
+      <img class="mySlides" alt="image" src="/images/offer1.png" />
+      <img class="mySlides" alt="image" src="/images/offer2.png" />
+      <img class="mySlides" alt="image" src="/images/offer3.png" />
+      <img class="mySlides" alt="image" src="/images/offer4.png" />
+      <img class="mySlides" alt="image" src="/images/offer5.png" />
+      <img class="mySlides" alt="image" src="/images/offer6.png" />
+    </div>
+
+    <br /><br /><br />
+    <div class="main-center">
+      <div class="heading-flex">
+        <h1 class="heading">THE SKETCHSCAPE STORE</h1>
+        <p>search for the latest products in the field of animation</p>
+      </div>
+
+      <!--Disney Products-->
+
+      <h2 class="sub-topic">Disney</h2>
+      <div class="disney-container">
+        <div class="shop-items">
+          <div class="item">
+            <div class="item-image">
+              <img src="/images/1.jfif" alt="image" width="200" height="200" />
+            </div>
+
+            <div class="item-description">
+              <div>
+                <p class="title">Snow White ClassicDoll</p>
+
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Snow White ClassicDoll', '19.99')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div class="cost">
+                <p>$19.99</p>
+                <div class="heart" id="heart1">
+                  <i class="bx bxs-heart" onclick="myFunction(1)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image2">
+              <img src="/images/2.jpg" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p class="title">Lion King Plush Simba</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Lion King Plush Simba', '16.99')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$16.99</p>
+                <div class="heart" id="heart2">
+                  <i class="bx bxs-heart" onclick="myFunction(2)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image3">
+              <img src="/images/3.jpg" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>Disney Lion King Simba</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Disney Lion King Simba', '19.20')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$19.20</p>
+                <div class="heart" id="heart3">
+                  <i class="bx bxs-heart" onclick="myFunction(3)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image4">
+              <img src="/images/4.jpg" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>New Disney Parks Bolt Big</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('New Disney Parks Bolt Big', '43.95')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$43.95</p>
+                <div class="heart" id="heart4">
+                  <i class="bx bxs-heart" onclick="myFunction(4)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image1">
+              <img src="/images/5.jpg" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>Disney Peter pan softToy</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Disney Peter pan softToy', '60.00')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$60.00</p>
+                <div class="heart" id="heart5">
+                  <i class="bx bxs-heart" onclick="myFunction(5)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image2">
+              <img src="/images/6.jpg" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>Patch | Disney's 101 Dalmatians</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Patch | Disneys 101 Dalmatians', '22.0')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+                <button class="cart-button" onclick="printInvoice()">
+                  Buy now
+                </button>
+              </div>
+              <div>
+                <p>$22.0</p>
+                <div class="heart" id="heart6">
+                  <i class="bx bxs-heart" onclick="myFunction(6)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image3">
+              <img src="/images/7.jfif" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>Penny Plush Toy</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Penny Plush Toy', '17.95')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$17.95</p>
+                <div class="heart" id="heart7">
+                  <i class="bx bxs-heart" onclick="myFunction(7)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--DreamWorks Products-->
+
+      <h2 class="sub-topic sub-topic2">DreamWorks</h2>
+      <div class="DreamWorks-container">
+        <div class="shop-items">
+          <div class="item">
+            <div class="item-image item-image1">
+              <img src="/images/88.jfif" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>Shrek Plush</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Shrek Plush', '46.98')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$46.98</p>
+                <div class="heart" id="heart9">
+                  <i class="bx bxs-heart" onclick="myFunction(9)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image2">
+              <img src="/images/8.jpeg" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>Mr. Peabody & Sherman Toy</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Mr. Peabody & Sherman Toy', '7')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$7</p>
+                <div class="heart" id="heart10">
+                  <i class="bx bxs-heart" onclick="myFunction(10)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image3">
+              <img src="/images/D1.jpg" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>Puss in Boots Toy</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Puss in Boots Toy', '8.90')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$8.90</p>
+                <div class="heart" id="heart11">
+                  <i class="bx bxs-heart" onclick="myFunction(11)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image4">
+              <img src="/images/D8.jpeg" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>DreamWorks Spirit Riding</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('DreamWorks Spirit Riding', '8.99')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$8.99</p>
+                <div class="heart" id="heart12">
+                  <i class="bx bxs-heart" onclick="myFunction(12)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image1">
+              <img src="/images/D3.jpg" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>Madagascar Penguins Toys</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Madagascar Penguins Toys', '5.30')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$5.30</p>
+                <div class="heart" id="heart13">
+                  <i class="bx bxs-heart" onclick="myFunction(13)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image2">
+              <img src="/images/D4.jpg" alt="image" width="200" height="220" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>Madagascar- Figure Marti</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Madagascar- Figure Marti', '4.80')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$4.80</p>
+                <div class="heart" id="heart14">
+                  <i class="bx bxs-heart" onclick="myFunction(14)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image item-image3">
+              <img src="/images/D5.jpeg" alt="image" width="200" height="200" />
+            </div>
+            <div class="item-description">
+              <div>
+                <p>Dreamworks Boss Baby</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <button
+                  class="add-to-cart"
+                  onclick="cart('Dreamworks Boss Baby', '16.0')"
+                >
+                  Add to Cart</button
+                >&nbsp;&nbsp;
+              </div>
+              <div>
+                <p>$16.0</p>
+                <div class="heart" id="heart15">
+                  <i class="bx bxs-heart" onclick="myFunction(15)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Big Image in the middle-->
+
+    <div class="big-image">
+      <img src="/images/y.jpg" alt="image" height="600" width="1050" />
+    </div>
+
+    <!--Pixar Products-->
+
+    <h2 class="sub-topic sub-topic3">Pixar</h2>
+    <div class="Pixar-container">
+      <div class="shop-items">
+        <div class="item">
+          <div class="item-image item-image1">
+            <img src="/images/11.jfif" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Car Story Toy,Children toys</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Car Story Toy,Children toys', '8.50')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$8.50</p>
+              <div class="heart" id="heart17">
+                <i class="bx bxs-heart" onclick="myFunction(17)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image2">
+            <img src="/images/15.jpeg" alt="image" width="180" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Dinesy coco, Toys</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Dinesy coco, Toys', '7.90')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$7.90</p>
+              <div class="heart" id="heart18">
+                <i class="bx bxs-heart" onclick="myFunction(18)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image3">
+            <img src="/images/44.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Disney / Pixar Up Carl 4</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Disney / Pixar Up Carl 4', '19.99')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$19.99</p>
+              <div class="heart" id="heart19">
+                <i class="bx bxs-heart" onclick="myFunction(19)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image4">
+            <img src="/images/33.jfif" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Miguel Rivera Coco Toy</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Miguel Rivera Coco Toy', '18.59')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$18.59</p>
+              <div class="heart" id="heart20">
+                <i class="bx bxs-heart" onclick="myFunction(20)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image1">
+            <img src="/images/16.jfif" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Incredibles-2-Toys-Kids</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Incredibles-2-Toys-Kids', '7.20')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$7.20</p>
+              <div class="heart" id="heart21">
+                <i class="bx bxs-heart" onclick="myFunction(21)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image2">
+            <img src="/images/17.jpg" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Luca Paguro Toy</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Luca Paguro Toy', '12.00')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+              <button class="button">Buy now</button>
+            </div>
+            <div>
+              <p>$12.00</p>
+              <div class="heart" id="heart22">
+                <i class="bx bxs-heart" onclick="myFunction(22)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image3">
+            <img src="/images/19.jfif" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Kung Fu Panda Po Plush</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Kung Fu Panda Po Plush', '42.0')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$42.0</p>
+              <div class="heart" id="heart23">
+                <i class="bx bxs-heart" onclick="myFunction(23)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Anime Products-->
+
+    <h2 class="sub-topic sub-topic4">Anime</h2>
+    <div class="Anime-container">
+      <div class="shop-items">
+        <div class="item">
+          <div class="item-image item-image1">
+            <img src="/images/A1.webp" alt="image" width="180" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Kaisen Kento Nanami</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Kaisen Kento Nanami', '7.90')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$7.90</p>
+              <div class="heart" id="heart25">
+                <i class="bx bxs-heart" onclick="myFunction(25)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image2">
+            <img src="/images/A2.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Ryomen Sukuna: King of Curses</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Ryomen Sukuna: King of Curses', '12.0')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$12.0</p>
+              <div class="heart" id="heart26">
+                <i class="bx bxs-heart" onclick="myFunction(26)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image3">
+            <img src="/images/A3.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Attack on Titan Levi Birthday</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Attack on Titan Levi Birthday', '5.60')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$5.60</p>
+              <div class="heart" id="heart27">
+                <i class="bx bxs-heart" onclick="myFunction(27)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image4">
+            <img src="/images/A5.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Nendoroid Swacchao Izuku Midoriya</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Nendoroid Swacchao Izuku Midoriya', '9.36')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$9.36</p>
+              <div class="heart" id="heart28">
+                <i class="bx bxs-heart" onclick="myFunction(28)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image1">
+            <img src="/images/A4.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Demon Slayer: Kimetsu</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Demon Slayer: Kimetsu', '4.59')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$4.59</p>
+              <div class="heart" id="heart29">
+                <i class="bx bxs-heart" onclick="myFunction(29)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image2">
+            <img src="/images/A6.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Shoto Todoroki: Hero's Edition</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Shoto Todoroki: Heros Edition', '6.30')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$6.30</p>
+              <div class="heart" id="heart30">
+                <i class="bx bxs-heart" onclick="myFunction(30)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image3">
+            <img src="/images/A7.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Parade Spy x Family Forger</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Parade Spy x Family Forger', '9.30')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$9.30</p>
+              <div class="heart" id="heart31">
+                <i class="bx bxs-heart" onclick="myFunction(31)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Other Products-->
+
+    <h2 class="sub-topic sub-topic5">Other</h2>
+    <div class="Other-container">
+      <div class="shop-items">
+        <div class="item">
+          <div class="item-image item-image1">
+            <img src="/images/S1.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Red Hood Action Figure</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Red Hood Action Figure', '8.35')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$8.35</p>
+              <div class="heart" id="heart33">
+                <i class="bx bxs-heart" onclick="myFunction(33)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image2">
+            <img src="/images/S2.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Black Panther Action Figure</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Black Panther Action Figure', '23.80')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$23.80</p>
+              <div class="heart" id="heart34">
+                <i class="bx bxs-heart" onclick="myFunction(34)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image3">
+            <img src="/images/S3.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Marvel Spider-Man</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Marvel Spider-Man', '9.52')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$9.52</p>
+              <div class="heart" id="heart35">
+                <i class="bx bxs-heart" onclick="myFunction(35)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image4">
+            <img src="/images/S4.jpg" alt="image" width="100" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Batman Action Figure</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Batman Action Figure', '41.6')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$41.6</p>
+              <div class="heart" id="heart36">
+                <i class="bx bxs-heart" onclick="myFunction(36)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image1">
+            <img src="/images/S5.jpg" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>Marvel Captain America</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('Marvel Captain America', '25.6')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$25.6</p>
+              <div class="heart" id="heart37">
+                <i class="bx bxs-heart" onclick="myFunction(37)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image2">
+            <img src="/images/S6.webp" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>The Craft Store Baby Groot</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('The Craft Store Baby Groot', '6.30')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$6.30</p>
+              <div class="heart" id="heart38">
+                <i class="bx bxs-heart" onclick="myFunction(38)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image item-image3">
+            <img src="/images/S7.jpg" alt="image" width="200" height="200" />
+          </div>
+          <div class="item-description">
+            <div>
+              <p>IronMan Action Figure</p>
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <button
+                class="add-to-cart"
+                onclick="cart('IronMan Action Figure', '7')"
+              >
+                Add to Cart</button
+              >&nbsp;&nbsp;
+            </div>
+            <div>
+              <p>$7</p>
+              <div class="heart" id="heart39">
+                <i class="bx bxs-heart" onclick="myFunction(39)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br />
+
+    <!--Add to cart container-->
+    <div class="cart-container">
+      <div id="root"></div>
+      <div class="sidebar">
+        <div class="head">
+          <p>My Cart</p>
+        </div>
+        <div id="cartItem">
+          <div id="emptyText">Your cart is empty</div>
+        </div>
+        <div class="foot">
+          <h3 class="total-text-name">Total</h3>
+          <h2 id="total">$0.00</h2>
+        </div>
+        <!--  -->
+        <button class="cart-button" onclick="printInvoice()">Buy now</button>
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <!--Page editor button-->
+    <button
+      class="editor-btn"
+      onclick="location.href='/student1/page-Editor.html';"
+    >
+      Editor
+    </button>
+
+    <!---Footer-->
+    <footer>
+      <div class="footer-logo-container">
+        <img src="/svg/SketchScapeLogo.svg" alt="logo" class="nav-logo" />
+        <div>
+          <p class="logo-name">SketchScape</p>
+          <p class="slogan">
+            Experience the Thrill of entertainment. Where the fun never stops!!!
+          </p>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <p>Copyright &#169;</p>
+
+        <div class="terms-conditions">
+          <p>Terms</p>
+          <p>Privacy</p>
+          <p>Cookies</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="SHOP.js"></script>
+    <!--Link to the Shop javascript page-->
+  </body>
+</html>

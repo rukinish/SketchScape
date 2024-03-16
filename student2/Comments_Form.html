@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments Form</title>
+    <link rel="stylesheet" href="Comments.css" />
+    <link rel="stylesheet" href="/externalStyleSheet/externalStyleSheet.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="collapsible collapsible-container collapsible--expanded">
+          <img src="/svg/SketchScapeLogo2.svg" alt="logo" class="nav-logo" />
+
+          <img
+            src="/svg/bars2.svg"
+            alt="collapsible-icon"
+            class="collapsible-icon"
+          />
+
+          <ul class="list collapsible-content">
+            <li class="anchors">
+              <a class="anchors-el" href="/student2/main.html">Home</a>
+            </li>
+            <li class="anchors">
+              <a class="anchors-el" href="/student1/SHOP.html">Buy Products</a>
+            </li>
+            <li class="anchors">
+              <a class="anchors-el" href="/student3/quiz.html">Quiz</a>
+            </li>
+            <li class="anchors">
+              <a class="anchors-el" href="/student3/student-details.html">Student Details</a>
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student4/student4-sitemap/sitemap.html"
+                >Sitemap</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student4/student4-gallery/gallery.html"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <hr />
+
+    <div class="container">
+      <div class="form">
+        <div class="comments-form">
+          <form
+            action="mailto:namrutha.20220922@iit.ac.lk"
+            method="post"
+            enctype="text/plain"
+          >
+            <h1 class="title">FeedBack</h1>
+            <div class="form-element">
+              <label id="name-label" for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-container"
+                placeholder="Enter your name"
+                required
+              />
+              <br />
+              <label id="email-label" for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-container"
+                placeholder="Enter your email"
+                required
+              />
+              <br />
+              <p>Where did you hear about our website ?</p>
+              <select
+                id="see-option"
+                name="see-option"
+                class="form-container"
+                required
+              >
+                <option value="Select your option">Select your option</option>
+                <option value="Newspaper/Magazine">Newspaper/Magazine</option>
+                <option value="Friends">Friends</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Internet">Internet</option>
+                <option value="E-mail Advertisement">Email Advetisement</option>
+              </select>
+              <br />
+              <p>
+                How were you satisfied with the website today ? Choose from 0 to
+                10 where 0 is extremely dissatisfied and 10 is extremely
+                satisfied
+              </p>
+              <div class="rating">
+                <input type="radio" name="1" /> <label> 1</label>
+                <input type="radio" name="2" /> <label> 2</label>
+
+                <input type="radio" name="3" /><label> 3</label>
+
+                <input type="radio" name="4" /><label> 4</label>
+
+                <input type="radio" name="5" /><label> 5</label>
+
+                <input type="radio" name="6" /><label> 6</label>
+
+                <input type="radio" name="7" /><label> 7</label>
+
+                <input type="radio" name="8" /><label> 8</label>
+
+                <input type="radio" name="9" /><label> 9</label>
+
+                <input type="radio" name="10" /> <label> 10</label>
+              </div>
+              <p>What style of animation did you like in our website ?</p>
+              <div class="ani-option">
+                <input type="checkbox" name="2D" /><label>2D Animation</label>
+                <input type="checkbox" name="3D" /><label>3D Animation</label>
+                <input type="checkbox" name="Stop" /><label>Stop Motion</label>
+                <input type="checkbox" name="Anime" /><label
+                  >Anime Animation</label
+                >
+              </div>
+              <p>How often do you visit our website:</p>
+              <div class="time-option">
+                <div>
+                  <input type="radio" name="day" /><label>Everyday</label>
+                </div>
+                <div>
+                  <input type="radio" name="week" /><label>Once a week</label>
+                </div>
+                <div>
+                  <input type="radio" name="month" /><label>Once a month</label>
+                </div>
+                <div>
+                  <input type="radio" name="less_month" /><label
+                    >Less than a month</label
+                  >
+                </div>
+                <div>
+                  <input type="radio" name="first" /><label
+                    >This is my first visit here</label
+                  >
+                </div>
+              </div>
+              <p>
+                If you have any more comments to add regarding our website? Pls
+                fill in the below box
+              </p>
+              <textarea
+                id="comment-description"
+                rows="5"
+                cols="100"
+                placeholder="Your Comments"
+              ></textarea>
+              <button onclick="myButton()" type="submit" class="send-btn">
+                Submit
+              </button>
+              <button type="reset" class="send-btn">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="editor-btn-container">
+      <a class="editor-btn" href="/student2/PageEditor_Student_2.html">
+        Editor
+      </a>
+    </div>
+
+    <script src="mainpage.js"></script>
+
+  </body>
+</html>

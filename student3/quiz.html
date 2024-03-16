@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SketchScape Quiz</title>
+    <link rel="stylesheet" href="/externalStyleSheet/externalStyleSheet.css" />
+    <!-- external style sheet -->
+    <link rel="stylesheet" href="CSS/ques_style.css" />
+    <!-- additional style sheet -->
+  </head>
+
+  <body>
+    <!-- navigation bar start -->
+    <header>
+      <nav class="nav-center">
+        <div class="collapsible collapsible-container collapsible--expanded">
+          <img src="images/logo_white.svg" alt="logo" class="nav-logo" />
+
+          <img
+            src="/svg/bars2.svg"
+            alt="collapsible-icon"
+            class="collapsible-icon"
+          />
+
+          <ul class="list collapsible-content">
+            <li class="anchors">
+              <a href="/student2/main.html" class="anchors-el">Home</a>
+            </li>
+            <li class="anchors">
+              <a href="/student1/SHOP.html" class="anchors-el">Buy Products</a>
+            </li>
+            <li class="anchors">
+              <a href="quiz.html" class="anchors-el">Quiz</a>
+            </li>
+            <li class="anchors">
+              <a href="student-details.html" class="anchors-el"
+                >Student Details</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                href="/student4/student4-sitemap/sitemap.html"
+                class="anchors-el"
+                >Sitemap</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                href="/student4/student4-gallery/gallery.html"
+                class="anchors-el"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- navigation bar end -->
+    <hr />
+
+    <!-- quiz elements -->
+    <div class="container">
+      <!-- first screen -->
+      <div class="rules-box">
+        <div class="rules">
+          <h1>Welcome to the SketchScape quiz</h1>
+          <h2>Instructions:</h2>
+          <ul>
+            <li>
+              You will be presented with 10 multiple-choice questions related to
+              animated movies and TV shows.
+            </li>
+            <li>
+              You have 60 seconds to complete the quiz. Once you start the quiz,
+              you won't be able to quit midway.
+            </li>
+            <li>
+              Each correct answer will earn you points. You can also choose to
+              skip a question if you're not sure of the answer.
+            </li>
+            <li>
+              Once you select an answer for a question, you won't be able to
+              change it.
+            </li>
+            <li>Have fun and do your best!</li>
+          </ul>
+        </div>
+        <!-- button for second screen with the questions -->
+        <div class="strt-btn">Let's Begin</div>
+      </div>
+      <!-- second screen  -->
+      <div class="box" id="question-screen" style="display: none">
+        <div class="header">
+          <div class="heading">SketchScape Quiz Time</div>
+          <div class="timer">Time Left : 01:00</div>
+        </div>
+        <!-- question and option screen -->
+        <section>
+          <div class="question-box">
+            <span
+              >In the movie 'The Incredibles,' what is Mr. Incredible's real
+              name?
+            </span>
+          </div>
+          <div class="img-container">
+            <img id="question-image" src="/svg/bars.svg" alt="Question Image" />
+          </div>
+          <div class="option-box">
+            <span onclick="checkAnswer(this)" data-opt="1"></span>
+            <span onclick="checkAnswer(this)" data-opt="2"></span>
+            <span onclick="checkAnswer(this)" data-opt="3"></span>
+            <span onclick="checkAnswer(this)" data-opt="4"></span>
+          </div>
+        </section>
+        <div class="footer">
+          <div class="counter" id="counter">
+            <p>1</p>
+            of
+            <p>10</p>
+            Questions
+          </div>
+
+          <!-- change to next question button -->
+          <button class="next-btn" onclick="showNext()">Next</button>
+        </div>
+      </div>
+      <!-- final screen -->
+      <div class="results" id="result-screen" style="display: none">
+        <div class="cup">
+          <img src="images/quiz_cup.png" alt="cup" />
+        </div>
+        <div class="heading">
+          CONGRATULATIONS!<br />
+          THE QUIZ IS COMPLETED!
+        </div>
+
+        <!--  result screen elements that are connected to the js-->
+        <div class="result-box">
+          <label>Questions : </label>
+          <span id="totQuestions">10</span>
+          <label>Questions answered : </label>
+          <span id="ansQuestions">0</span>
+          <label>Correct : </label>
+          <span id="correctAnswers">0</span>
+          <label>Incorrect : </label>
+          <span id="wrongAnswers">0</span>
+          <label>Score : </label>
+          <span id="score">0</span>
+          <label>Time taken : </label>
+          <span id="timeTaken">0</span>
+        </div>
+        <div class="comment-box">
+          <span id="userComment"></span>
+        </div>
+        <!-- restart button -->
+        <div class="restart-butn" id="restart-butn">
+          <a href="quiz.html">Restart</a>
+        </div>
+      </div>
+    </div>
+    <!-- page editor button -->
+    <div class="editor-btn-container">
+      <button class="editor-btn" onclick="location.href='pageEd3.html';">
+        Editor
+      </button>
+    </div>
+
+    <hr class="ruler" />
+    <!-- footer -->
+    <footer>
+      <div class="footer-logo-container">
+        <img src="images/logo_white.svg" alt="logo" class="nav-logo" />
+        <div>
+          <p class="logo-name">SketchScape</p>
+          <p class="slogan">
+            Experience the thrill of entertainment. Where the fun never stops!!!
+          </p>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <p>Copyright &#169;</p>
+
+        <div class="terms-conditions">
+          <p>Terms</p>
+          <p>Privacy</p>
+          <p>Cookies</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="JS/questions.js"></script>
+  <!-- js with the quiz questions -->
+
+  <script src="JS/quesScript.js"></script>
+  <!-- js with the quiz functionality -->
+  <script src="/student2/mainpage.js"></script>
+</html>

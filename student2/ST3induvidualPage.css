@@ -1,0 +1,407 @@
+* {
+  transition: all 0.2s;
+}
+
+body {
+  background-color: #778DA9;
+}
+
+h1 {
+  color: #1B263B;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #1B263B;
+}
+
+p {
+  font-size: 1.7rem;
+  color: #0d1b2a;
+}
+
+/*  NAV BAR colour */
+.ruler{
+border-color: #0d1b2a;
+}
+.anchors-el:hover {
+  color: #ffffff;
+}
+
+/* anchor CONTENT */
+
+.content {
+position: sticky;
+top: 0px;
+background: rgba(27, 38, 59,0.9);
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.content ul{
+width: auto;
+display: flex;
+list-style-type: none;
+}
+
+.content li{
+margin-block: 5px;
+}
+
+.content a{
+color: #ffffff;
+}
+
+.content a:hover{
+  border-bottom: 1px solid white;
+}
+
+
+@media screen and (min-width: 768px) {
+
+.content ul {
+  width: auto;
+  display: flex;
+}
+
+.content li {
+  border-bottom: none;
+  margin-right: 2rem;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.content{
+  position: sticky;
+}
+.content li {
+  margin-right: 3rem;
+}
+}
+
+/* MAIN CONTENT */
+
+/* stop motion */
+
+.main-center {
+display: flex;
+flex-direction: column;
+margin: auto;
+align-items: center;
+text-align: justify;
+}
+
+.intro-container,
+.history-container,
+.techniques-container,
+.popular-films-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 85%;
+margin-bottom: 60px;
+}
+
+.heading {
+font-size: 4rem;
+font-style: italic;
+}
+
+.main-picture {
+width: 400px;
+}
+
+.hero-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 80px;
+}
+
+.stop-tag {
+display: none;
+}
+
+@media screen and (min-width: 768px) {
+.main-picture {
+  width: 530px;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.main-picture {
+width: 650px;
+}
+}
+
+@media screen and (min-width: 1250px) {
+.heading {
+font-size: 5rem;
+}
+.heading-container {
+display: flex;
+width: 100%;
+justify-content: flex-end;
+}
+
+.hero-container {
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.main-picture {
+  width: 590px;
+  height: 378px;
+  object-fit: cover;
+  margin-right: 40px;
+}
+
+.hero-container > p {
+  margin-top: 0;
+}
+
+.stop-tag-container {
+position: absolute;
+left: -38px;
+top: 698px;
+}
+
+.stop-tag {
+display: block;
+font-size: 200px;
+opacity: 0.2;
+margin: 0;
+font-weight: bold;
+margin-left: -90px;
+}
+}
+
+@media screen and (min-width: 1300px) {
+.stop-tag-container {
+position: absolute;
+left: -38px;
+top: 698px;
+}
+.stop-tag {
+display: block;
+font-size: 200px;
+opacity: 0.2;
+margin: 0;
+font-weight: bold;
+margin-left: -40px;
+margin-top: -90px;
+}
+}
+@media screen and (min-width: 1537px) {
+.stop-tag-container {
+position: absolute;
+left: -38px;
+top: 698px;
+}
+.stop-tag {
+display: block;
+font-size: 200px;
+opacity: 0.2;
+margin: 0;
+font-weight: bold;
+margin-left: 42px;
+margin-top: -120px;
+}
+}
+
+/* HISTORY */
+
+.history-container {
+background-color: #E8E8E8;
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+.history-heading {
+margin-top: 60px;
+}
+
+.history-image-container,
+.techniques-image-container, 
+.popular-image-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.history-image {
+margin: 45px;
+margin-bottom: 0;
+width: 250px;
+height: 200px;
+}
+
+.about-history {
+width: 75%;
+margin-bottom: 120px;
+}
+
+.history-tag {
+display: none;
+}
+
+.history-tag-disappear {
+display: none;
+}
+
+.caption-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.caption-container p{
+font-size: 12px;
+}
+
+@media screen and (min-width: 1250px) {
+.history-tag-container {
+display: flex;
+align-items: center;
+margin: 0;
+}
+
+.history-tag {
+color: #1B263B;
+display: block;
+font-size: 200px;
+opacity: 0.5;
+margin: 0;
+font-weight: bold;
+margin-inline: 700px;
+margin-right: -75px;
+margin-top: -140px;
+}
+
+.history-heading {
+margin-right: 825px;
+}
+}
+
+/* TECHNIQUES */
+
+.techniques-container {
+background-color: #778DA9;
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+.about-techniques,
+.about-popular {
+width: 85%;
+margin-block: 50px;
+}
+
+.techniques-image {
+margin: 25px;
+margin-bottom: 0;
+width: 400px;
+height: 300px; 
+}
+
+.techniques-tag {
+display: none;
+}
+
+@media screen and (min-width: 1100px) {
+.techniques-image {
+margin-top: 50px;
+margin: 35px;
+margin-bottom: 0;
+width: 450px;
+}
+}
+
+@media screen and (min-width: 1250px) {
+.techniques-image {
+width: 500px;
+}
+
+.techniques-tag-container {
+display: flex;
+align-items: center;
+}
+
+.techniques-tag {
+display: block;
+font-size: 200px;
+opacity: 0.5;
+margin: 0;
+font-weight: bold;
+margin-left: -600px;
+}
+
+.techniques-heading {
+margin-right: 450px;
+margin-left: -435px;
+}
+}
+
+/* POPULAR FILMS */
+
+.popular-films-container {
+background-color: #E8E8E8;
+width: 100%;
+height: auto;
+overflow: hidden;
+margin-bottom: 0px;
+}
+
+.popular-tag {
+display: none;
+}
+
+.popular-image {
+width: 190px;
+height: 270px;
+margin: 45px;
+margin-bottom: 0;
+display: inline-block;
+}
+
+@media screen and (min-width: 1115px) {
+.popular-image-container {
+width: 1000px;
+margin-bottom: 20px;
+}
+}
+
+@media screen and (min-width: 1250px) {
+.popular-image1 {
+transform: scale(1.2);
+}
+
+.popular-tag-container {
+display: flex;
+align-items: center;
+}
+
+.popular-tag {
+display: block;
+font-size: 200px;
+opacity: 0.5;
+margin: 0;
+font-weight: bold;
+margin-left: -250px;
+}
+
+.popular-heading {
+margin-left: 500px;
+margin-right: 850px;
+}
+}
+
+/* FOOTER */
+
+.editor-btn-container {
+margin-top: 0px;
+}

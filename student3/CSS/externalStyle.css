@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+html {
+    font-family: poppins, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+a {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+/* NAVIGATION BAR */
+
+.collapsible-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 100px;
+}
+
+.collapsible-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+a {
+    color: #0d1b2a;
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.anchors {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    margin-block: 5px;
+}
+
+.anchors-el {
+    transition: all 0.2s ease-in-out;
+}
+
+.anchors-el:hover {
+    color: #5182bd;
+}
+
+.collapsible-content {
+    display: none;
+}
+
+.collapsible--expanded .collapsible-content {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .collapsible-icon {
+      display: none;
+    }
+
+    .collapsible--expanded .collapsible-content,
+    .collapsible-content {
+      width: auto;
+      display: flex;
+    }
+
+    .anchors {
+      border-bottom: none;
+      margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .anchors {
+      margin-right: 3rem;
+    }
+}
+
+/* footer */
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.slogan {
+  margin-left: 40px;
+}
+
+.copyright-container {
+  display: flex;
+}
+
+.copyright-container > p {
+  margin-left: 15px;
+}
+
+.terms-conditions {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.terms-conditions > p {
+  margin-left: 10px;
+}
+
+    .editor-btn-container {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 10px;
+      }
+      
+      .editor-btn {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 10px 20px;
+        border-radius: 15px;
+        color: white;
+        background-color: #1B263B;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .editor-btn:hover {
+        background-color: #263552;
+      }

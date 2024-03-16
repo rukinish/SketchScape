@@ -1,0 +1,162 @@
+body {
+  background-color: white;
+  height: 250vh;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p.ani-content {
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 21px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.splash.display-none {
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 50%;
+}
+
+.Ani-image {
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 298px;
+}
+
+.Ani-image1 {
+  width: 350px;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.center-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+}
+
+.animation-image-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.animation-heading {
+  color: white;
+}
+
+.animation-heading-2 {
+  color: black;
+}
+
+.rect-container {
+  width: 100%;
+  background-color: #1b263b;
+  padding-top: 150px;
+  margin-bottom: 200px;
+}
+.Ani-image-rect {
+  margin: auto;
+  width: 400px;
+  height: 300px;
+  background-color: #cccccc;
+  object-fit: cover;
+}
+
+.description {
+  color: white;
+  width: auto;
+  margin-left: 20px;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.description-2 {
+  color: black;
+}
+
+.read-more {
+  color: white;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.read-more-2 {
+  color: black;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+.editor-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.editor-btn {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: white;
+  background-color: #1b263b;
+  border: none;
+  cursor: pointer;
+}
+
+.editor-btn:hover {
+  background-color: #263552;
+}
+
+/*Comments Form(FeedBack Button in Mainpage)*/
+.Comments-button {
+  height: 40px;
+  border: solid 3px #cccccc;
+  background: #415a77;
+  width: 100px;
+  line-height: 32px;
+  font-weight: 600;
+  color: white;
+  transform: rotate(360deg);
+  text-align: center;
+  font-size: 17px;
+  position: fixed;
+  margin-left: 1300px;
+  bottom: -200px;
+  top: 95%;
+  font-family: sans-serif;
+  z-index: 999;
+}
+
+#Comments-main {
+  display: none;
+  float: left;
+  padding-top: 0px;
+}

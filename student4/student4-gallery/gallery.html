@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/externalStyleSheet/externalStyleSheet.css" />
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="collapsible collapsible-container collapsible--expanded">
+          <img src="/svg/SketchScapeLogo.svg" alt="logo" class="nav-logo" />
+
+          <img
+            src="/svg/bars2.svg"
+            alt="collapsible-icon"
+            class="collapsible-icon"
+          />
+
+          <ul class="list collapsible-content">
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student2/main.html"
+                >Home</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student1/SHOP.html"
+                >Buy Products</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student3/quiz.html"
+                >Quiz</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student3/student-details.html"
+                >Student Details</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student4/student4-sitemap/sitemap.html"
+                >Sitemap</a
+              >
+            </li>
+            <li class="anchors">
+              <a
+                class="anchors-el"
+                href="/student4/student4-gallery/gallery.html"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <section class="main-center">
+        <div class="main-header-container">
+          <div class="heading-container">
+            <h1 id="heading">
+              Most Popular Animated Movie of The Year <br />
+              2013-2022
+            </h1>
+          </div>
+
+          <div class="selection-option-container">
+            <select
+              onchange="backgroundColor(this.value)"
+              class="option-selector"
+            >
+              <option value="white">Background Color White(Default)</option>
+              <option value="#415B76">Light Blue</option>
+              <option value="#1A263D">Navy</option>
+              <option value="random">Random Color</option>
+            </select>
+
+            <select onchange="fontSize(this.value)" class="option-selector">
+              <option value="3rem">Font Size Medium(Default)</option>
+              <option value="2.7rem">Small</option>
+              <option value="3.3rem">Large</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <img src="/images/frozen.jpeg" alt="picture" id="image-preview" />
+        </div>
+
+        <div>
+          <p id="image-description">
+            Frozen is a 2013 American 3D computer-animated musical fantasy film
+            produced by Walt Disney Animation Studios. The movie tells the story
+            of two sisters, Princess Elsa and Princess Anna, who live in the
+            kingdom of Arendelle. The movie features some memorable songs,
+            including Let It Go and Do You Want to Build a Snowman? and has
+            become a cultural phenomenon since its release, winning numerous
+            awards and accolades.
+          </p>
+        </div>
+
+        <div class="popular-contents">
+          <div class="popular-content">
+            <img
+              src="/images/frozen.jpeg"
+              alt="Frozen Picture"
+              class="thumbnail"
+              onclick="showPictureText(this, 'Frozen is a 2013 American 3D computer-animated musical fantasy film produced by Walt Disney Animation Studios. The movie tells the story of two sisters, Princess Elsa and Princess Anna, who live in the kingdom of Arendelle. The movie features some memorable songs, including Let It Go and Do You Want to Build a Snowman? and has become a cultural phenomenon since its release, winning numerous awards and accolades.')"
+            />
+            <p class="thumbnail-description">
+              Frozen <br />
+              2013
+            </p>
+          </div>
+
+          <div class="popular-content">
+            <img
+              src="/images/howToTrainYourDragon.jpg"
+              alt="How to Train Your Dragon Picture"
+              class="thumbnail"
+              onclick="showPictureText(this, 'How to Train Your Dragon 2 is a 2014 American 3D computer-animated action fantasy film produced by DreamWorks Animation. The movie is a sequel to the 2010 film How to Train Your Dragon and continues the story of Hiccup, a young Viking who befriends a dragon named Toothless. The movie features impressive animation, including stunning visuals of the dragons and their flying sequences, and an emotional storyline that explores themes of family, friendship, and sacrifice. ')"
+            />
+            <p class="thumbnail-description">
+              How to Train Your Dragon 2 <br />
+              2014
+            </p>
+          </div>
+
+          <div class="popular-content">
+            <img
+              src="/images/insideOut.jpg"
+              alt="Inside Out Picture"
+              class="thumbnail"
+              onclick="showPictureText(this, 'Inside Out is a 2015 American 3D computer-animated comedy-drama film produced by Pixar Animation Studios. The movie tells the story of a young girl named Riley, whose family moves from Minnesota to San Francisco, causing her to experience a range of emotions. The films main characters are anthropomorphic representations of Rileys emotions: Joy, Sadness, Fear, Anger, and Disgust, who live in a control center in Rileys mind and control her actions and reactions. The movie explores complex themes of mental health, growing up, and the importance of emotions.')"
+            />
+            <p class="thumbnail-description">
+              Inside Out<br />
+              2015
+            </p>
+          </div>
+
+          <div class="popular-content">
+            <img
+              src="/images/zootopiaPicture.jpg"
+              alt="Zootopia Picture"
+              class="thumbnail"
+              onclick="showPictureText(this, 'Zootopia is a 2016 American 3D computer-animated buddy cop comedy film produced by Walt Disney Animation Studios. The movie takes place in a world where animals have evolved to live together in a civilized society, called Zootopia. The story follows Judy Hopps, a young rabbit who becomes the first rabbit police officer in Zootopia, and her unlikely partner, a sly fox named Nick Wilde, as they work together to solve a missing mammals case. The movie features stunning animation, an engaging storyline, and a cast of memorable characters, including the charming duo of Judy and Nick.')"
+            />
+            <p class="thumbnail-description">
+              Zootopia<br />
+              2016
+            </p>
+          </div>
+
+          <div class="popular-content">
+            <img
+              src="/images/CocoPicture.jpg"
+              alt="Coco Picture"
+              class="thumbnail"
+              onclick="showPictureText(this, 'Coco is a 2017 American 3D computer-animated fantasy film produced by Pixar Animation Studios. The movie is inspired by the Mexican holiday of Dia de los Muertos (Day of the Dead) and tells the story of a young boy named Miguel who dreams of becoming a musician, despite his familys generations-old ban on music. On Dia de los Muertos, Miguel accidentally enters the Land of the Dead, where he meets his ancestors and discovers the truth about his familys past. The movie features stunning visuals, colorful animation, and a beautiful soundtrack filled with original songs.')"
+            />
+            <p class="thumbnail-description">
+              Coco<br />
+              2017
+            </p>
+          </div>
+
+          <div class="popular-content">
+            <img
+              src="/images/spiderMan.jpg"
+              alt="SpiderMan Picture"
+              class="thumbnail"
+              onclick="showPictureText(this, 'Spider-Man: Into the Spider-Verse is a 2018 American computer-animated superhero film produced by Sony Pictures Animation in association with Marvel. The movie follows the story of teenager Miles Morales, who becomes the new Spider-Man and must team up with other versions of Spider-Man from different dimensions to stop a threat that could destroy all of their realities. The films unique animation style combines traditional hand-drawn comic book techniques with computer-generated imagery, creating a visually stunning and dynamic experience. The movie received critical acclaim and won numerous awards, including the Academy Award for Best Animated Feature, making it the first non-Disney or Pixar film to win in the category since 2011.')"
+            />
+            <p class="thumbnail-description">
+              Spider Man: Into the Spider-Verse<br />
+              2018
+            </p>
+          </div>
+
+          <div class="popular-content">
+            <img
+              src="/images/toyStory5.jpg"
+              alt="toy-story"
+              class="thumbnail"
+              onclick="showPictureText(this, 'Toy Story 4 is a 2019 American 3D computer-animated comedy film produced by Pixar Animation Studios. The movie continues the story of Woody, Buzz Lightyear, and their toy friends, as they face new challenges and adventures in the life of their new owner, Bonnie. The movie introduces a new character, Forky, a spork who has been transformed into a toy and becomes a favorite of Bonnie. The film was a commercial success, grossing over $1 billion worldwide, and received critical acclaim, with praise for its animation, storytelling, and the emotional impact of its conclusion to the beloved franchise.')"
+            />
+            <p class="thumbnail-description">
+              Toy Story 4<br />
+              2019
+            </p>
+          </div>
+
+          <div class="popular-content">
+            <img
+              src="/images/soulPicture1.jpg"
+              alt="soul Picture"
+              class="thumbnail"
+              onclick="showPictureText(this, 'Soul is a 2020 American computer-animated film produced by Pixar Animation Studios. The movie tells the story of Joe Gardner, a middle school music teacher and aspiring jazz musician who has a near-death experience that separates his soul from his body. Joe finds himself in the Great Before, a place where souls are prepared for life on Earth, and he must find a way to return to his body and fulfill his dream of performing at a jazz club. The film explores deep and complex themes, such as purpose, passion, and the meaning of life, through its vibrant characters, stunning visuals, and a beautifully crafted score by Trent Reznor and Atticus Ross. Soul has been praised for its emotional depth, exceptional animation, and powerful message, and it has won numerous awards, including the Academy Award for Best Animated Feature and Best Original Score.')"
+            />
+            <p class="thumbnail-description">
+              Soul<br />
+              2020
+            </p>
+          </div>
+
+          <div class="popular-content">
+            <img
+              src="/images/rayaPicture.jpg"
+              alt="Raya Picture"
+              class="thumbnail"
+              onclick="showPictureText(this, 'Raya and the Last Dragon is a 2021 American computer-animated adventure film produced by Walt Disney Animation Studios. The movie is set in the fictional world of Kumandra, where humans and dragons once lived together in harmony. After a great tragedy, the dragons sacrifice themselves to save humanity, leaving behind a magical gem that can restore peace and prosperity to the land. The story follows the journey of Raya, a skilled warrior and the daughter of the Chief of Heart, as she sets out to find the last dragon, Sisu, and restore the gem before it falls into the wrong hands. The film features stunning animation, vibrant visuals, and a memorable score by James Newton Howard.')"
+            />
+            <p class="thumbnail-description">
+              Raya And The Last Dragon <br />
+              2021
+            </p>
+          </div>
+
+          <div class="popular-content">
+            <img
+              src="/images/PinocchioPicture.jpg"
+              alt="Pinocchio Picture"
+              class="thumbnail"
+              onclick="showPictureText(this, 'Guillermo Del Toros Pinocchio is an upcoming stop-motion animated musical film based on the classic tale of Pinocchio, directed by Guillermo Del Toro and co-directed by Mark Gustafson. The movie will be a darker and more mature retelling of the story, with Del Toros signature gothic and fantastical elements. Guillermo Del Toros Pinocchio promises to be a visually stunning and emotionally gripping film, with Del Toros unique vision and Gustafsons expertise in stop-motion animation. The movie is expected to explore themes of identity, morality, and the human condition, making it a highly anticipated and thought-provoking film for audiences of all ages.')"
+            />
+            <p class="thumbnail-description">
+              Guillermo Del Toro's Pinocchio<br />
+              2022
+            </p>
+          </div>
+        </div>
+        <div class="editor-btn-container">
+          <a
+            href="/student4/student4-pageEditor/pageEditor.html"
+            class="editor-btn"
+            >Editor</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo-container">
+        <img src="/svg/SketchScapeLogo.svg" alt="logo" class="nav-logo" />
+        <div>
+          <p class="logo-name">SketchScape</p>
+          <p class="slogan">
+            Experience the Thrill of entertainment. Where the fun never stops!!!
+          </p>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <p>Copyright &#169;</p>
+
+        <div class="terms-conditions">
+          <p>Terms</p>
+          <p>Privacy</p>
+          <p>Cookies</p>
+        </div>
+      </div>
+    </footer>
+    <script src="gallery.js"></script>
+  </body>
+</html>

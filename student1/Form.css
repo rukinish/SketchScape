@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+body {
+  background-color: #4c617a;
+  margin: 0;
+  height: 250vh;
+  
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+a {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+hr {
+  margin: 0;
+}
+
+/* NAVIGATION BAR */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.anchors-el:hover {
+  color: #1B263B;
+}
+
+.main-container {
+  display: flex;
+}
+
+ .logo{
+     width: 50px;
+     height: 50px;
+ }
+ .section-p1{
+     padding: 40px 80px;
+ }
+
+.shipping_details{
+  margin-left: 8%;
+  padding-top: 10px;
+  display: flex;
+  
+}
+.shipping_details h2{
+  font-size: 18px;
+}
+
+.details{
+  margin-top: 4%;
+  font-size: 14px;
+  margin-left: 5%;
+}
+
+.Delvery_informaton{
+  margin-left:450px;
+  margin-top: 70px;
+  align-items: center;
+  font-size: 16px;
+  flex-wrap: wrap; 
+  width: calc(80%/2 - 20px);
+  border: 2px solid;
+  padding: 50px;
+  padding-top: 10px;
+  height: 950px;
+  background-color: white;
+  
+  
+} 
+.row1,
+.row2,
+.row3{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+
+.Delvery_informaton input-box{
+  width: calc(100%/2 - 20px); 
+}
+
+.Delvery_informaton input{
+  height: 30px;
+  width: 100%;
+  font-size: 16px;
+}
+
+
+#expiry_date{
+  width: calc(20%/2 - 20px);
+  text-align: center;
+  font-size: 14px;
+  width: 50px;
+  
+}
+.Expiry_date{
+  display: flex;
+  
+}
+.date{
+  width: 50px;
+  padding-left: 10px;
+}
+.month{
+  padding-left: 5px;
+}
+.slash{
+  font-size: 30px;
+  padding-left: 15px;
+ font-weight: 100;
+}
+
+.Summary button{
+  font-size: 18px;
+  background-color: #233851;
+  color: white;
+  border: 0px;
+  padding: 8px 8px 8px 8px;
+  cursor: pointer;
+  border-radius: .9em;
+  margin-top: 6%;  
+  width: 40%;
+}
+.button{
+  font-size: 18px;
+  background-color: #233851;
+  color: white;
+  border: 0px;
+  padding: 8px 8px 8px 8px;
+  cursor: pointer;
+  border-radius: .9em;
+  margin-top: 6%;  
+  width: 30%;
+  margin-left: 30%;
+  
+}
+#Quantity{
+  margin-top: 20px;
+  width: 40px;
+}
+.input-box span{
+  color: red;
+  font-size: 12px;
+}
+#fname_error,#lname_error,#address_error,
+#city_error,#code_error,#Email_error,
+#Mobile_error{
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  border-radius: 3px;
+  display: none;
+}
+
+
+
+
